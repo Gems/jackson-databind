@@ -8,8 +8,9 @@ Author: Tatu Saloranta, tatu.saloranta@iki.fi
 
 Co-Authors (with only partial listings below):
 
-* Joo Hyuk Kim (JooHyukKim@github)
-* PJ Fanning (pjfanning@github)
+* Joo Hyuk Kim (@JooHyukKim)
+* PJ Fanning (@pjfanning)
+* Sim Yih Tsern (@yihtsern)
 
 ----------------------------------------------------------------------------
 
@@ -1624,9 +1625,9 @@ Sim Yih Tsern (yihtsern@github)
  * Contributed fix for #3897: 2.15.0 breaks deserialization when POJO/Record only has a
    single field and is marked `Access.WRITE_ONLY`
   (2.15.1)
- * Contributed fux fix #3968: Records with additional constructors failed to deserialize
+ * Contributed fix for #3968: Records with additional constructors failed to deserialize
   (2.15.3)
-
+ ... and many more (as of 2.18)
 
 Ajay Siwach (Siwach16@github)
   * Contributed #3637: Add enum features into `@JsonFormat.Feature`
@@ -1785,6 +1786,11 @@ Peter Levart (plevart@github)
    a Converter that may return null for a non-null input
   (2.17.2)
 
+Susan Witts (susanw1@github)
+ * Reported #4607: `MismatchedInput`: No Object Id found for an instance of X to
+   assign to property '@id'
+  (2.17.2)
+
 Ulf Dreyer (u3r@github)
  * Reported #4085: `@JsonView` does not work on class-level for records
   (2.18.0)
@@ -1811,4 +1817,9 @@ Matthew Luckam (mluckam@github)
 Alexandre Jacob (ajacob@github)
  * Reported #4545: Unexpected deserialization behavior with `@JsonCreator`,
    `@JsonProperty` and javac `-parameters`
+  (2.18.0)
+
+Eduard Gomoliako (Gems@github)
+ * Reported #4602: Possible wrong use of _arrayDelegateDeserializer in
+   BeanDeserializerBase::deserializeFromObjectUsingNonDefault()
   (2.18.0)
