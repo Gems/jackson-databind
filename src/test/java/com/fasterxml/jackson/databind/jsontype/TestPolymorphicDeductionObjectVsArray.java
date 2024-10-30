@@ -50,7 +50,7 @@ public class TestPolymorphicDeductionObjectVsArray extends DatabindTestUtil {
     }
 
     static class DataArray extends ArrayList<DataItem> implements Data {
-        @JsonCreator(mode = JsonCreator.Mode.DELEGATING)
+        @JsonCreator
         DataArray(Collection<DataItem> items) {
             super(new ArrayList<>(items));
         }
